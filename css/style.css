@@ -55,9 +55,6 @@ p {
 .header__nav {
   grid-area: nav;
 }
-.header__nav--burger {
-  display: none;
-}
 .header__nav li {
   display: inline-block;
   vertical-align: middle;
