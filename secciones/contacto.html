@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Nutricionista</title>
+  </head>
+  <body>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+      <link rel="stylesheet" href="../css/normalize.css" />
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+      <title>Nutricionista</title>
+    </head>
+    <!--HEADER-->
+    <header class="header">
+      <div class="header__nav--brand"><a href="../index.html">Brand</a></div>
+      <input type="checkbox" id="check" />
+      <label for="check" class="bar-btn">menu</label>
+      <nav class="header__nav">
+        <ul class="header__nav--buttons">
+          <li><a href="./casos.html">Casos</a></li>
+          <li><a href="./planes.html">Planes</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--MAIN-->
+    <main>
+      <section>
+        <h1>Contacto</h1>
+        <form action="POST">
+          <div class="section__contacto">
+            <div class="section__contacto--form--left">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Nombre"
+              />
+              <br />
+              <label for="apellido">Apellido</label>
+              <input
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Apellido"
+              />
+              <br />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <br />
+              <label for="objetivo">Objetivo</label>
+              <select name="objetivo" id="objetivo">
+                <option value="perdidaDePeso">Pérdida de peso</option>
+                <option value="aumentoDePeso">Aumento de peso</option>
+                <option value="deportiva">Deportiva</option>
+                <option value="vegana">Vegana</option>
+                <option value="vegetariana">Vegetariana</option>
+              </select>
+              <br />
+            </div>
+            <div class="section__contacto--form--right">
+              <label for="comentario">Comentario</label>
+              <br />
+              <textarea
+                name="comentario"
+                id="comentario"
+                cols="30"
+                rows="10"
+                placeholder="Comentarios"
+              ></textarea>
+              <br />
+            </div>
+            <div class="section__contacto--form--button">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section>
+        <div class="section__redes">
+          <h2>
+            Seguinos en las redes
+          </h2>
+          <div class="section__redes--redes">
+            <a href="" class="section__redes--redes--red red__uno"></a>
+            <a href="" class="section__redes--redes--red red__dos"></a>
+            <a href="" class="section__redes--redes--red red__tres"></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info--col1 footer__info--col">
+          <span>
+            <strong class="footer__info--gral"><a href="">Info</a></strong>
+            <br />
+          </span>
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+        </div>
+        <div class="footer__info--col2 footer__info--col">
+          <span>
+            <strong class="footer__info--gral"><a href="">Info</a></strong>
+            <br />
+          </span>
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+        </div>
+        <div class="footer__info--col3 footer__info--col">
+          <span>
+            <strong class="footer__info--gral"><a href="">Info</a></strong>
+            <br />
+          </span>
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+          <span class="footer__info--sec"><a href="">lorem</a></span>
+          <br />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
