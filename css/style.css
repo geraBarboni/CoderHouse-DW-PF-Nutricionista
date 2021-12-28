@@ -11,15 +11,45 @@ a:hover {
   text-decoration: none;
   color: teal;
 }
-button {
+.btn-primary {
   color: aliceblue;
   background-color: teal;
+  border: 0;
+  border-radius: 100px;
 }
-button:hover {
+.btn-primary:hover {
   font-weight: 500;
   transition: 0.3s;
   color: aliceblue;
+  border: 0;
   background-color: rgb(3, 177, 177);
+}
+.btn-primary:focus {
+  font-weight: 500;
+  transition: 0.3s;
+  color: aliceblue;
+  border: 0;
+  background-color: rgb(3, 177, 177);
+}
+.btn-secondary {
+  color: teal;
+  background-color: aliceblue;
+  border: 2px solid teal;
+  border-radius: 100px;
+}
+.btn-secondary:hover {
+  font-weight: 500;
+  transition: 0.3s;
+  color: aliceblue;
+  border: 2px solid teal;
+  background-color: teal;
+}
+.btn-secondary:focus {
+  font-weight: 500;
+  transition: 0.3s;
+  color: teal;
+  border: 0;
+  background-color: aliceblue;
 }
 h1 {
   margin-left: 5vw;
@@ -35,98 +65,42 @@ h3 {
 p {
   font-size: 1.2rem;
 }
+.card {
+  border-radius: 10px;
+}
+.round-left {
+  border-radius: 10px 0px 0px 10px;
+}
 
 /*-------------------------------------------------------------------------------------COMPONENTES GENERALES*/
-/*-------------------------------------------------------------------------------------HEADER*/
-.header {
-  width: 100%;
-  height: 15%;
-  display: grid;
-  grid-template-areas: 'brand nav';
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: 100%;
-}
-.header__nav--brand {
-  font-size: 28px;
-  font-weight: 500;
-  grid-area: brand;
-  margin: auto auto auto 5%;
-}
-.header__nav {
-  grid-area: nav;
-}
-.header__nav li {
-  display: inline-block;
-  vertical-align: middle;
-}
-.header__nav--buttons {
-  display: flex;
-  justify-content: space-around;
-}
-.header__nav--buttons li {
-  font-size: 18px;
-  margin-top: 0.8%;
-}
-.bar-btn {
-  display: none;
-}
-#check {
-  display: none;
-}
 /*-------------------------------------------------------------------------------------FOOTER*/
 .footer {
   width: 100%;
-  height: 20vh;
+  height: auto;
   margin-top: 10vh;
+  padding: 2%;
   background-color: teal;
 }
-.footer__info {
-  width: 70%;
-  height: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-areas: 'info1 info2 info3';
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 100%;
-}
-.footer__info--col1 {
-  grid-area: info1;
-}
-.footer__info--col2 {
-  grid-area: info2;
-}
-.footer__info--col3 {
-  grid-area: info3;
-}
-.footer__info--col {
-  margin: auto;
-}
-.footer__info--col a {
+.footer a {
   color: aliceblue;
 }
-
+.footer__info {
+  font-weight: bold;
+}
 /*-------------------------------------------------------------------------------------INDEX*/
 /*--------------------------------------------------------------------MAIN*/
 /*------------------------------------------------------HOME: HERO*/
 .section__hero {
   height: 75vh;
   width: 100%;
-  display: grid;
-  grid-template-areas: 'left right';
-  grid-template-rows: 100%;
-  grid-template-columns: 50% 50%;
-}
-.section__hero--left {
-  grid-area: left;
 }
 .section__hero--left--texts {
-  margin-top: 25%;
+  margin-top: 50%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 .section__hero--left--texts h1 {
-  margin-left: 0vw;
   font-size: 7vh;
 }
 .section__hero--left--texts button {
@@ -136,352 +110,93 @@ p {
   border-radius: 100vh;
 }
 .section__hero--right {
-  grid-area: right;
-  background-image: url(../img/young-woman-holding-deep-plate-vegetables-her-hands-concept-proper-nutrition-diet-healthy-lifestyle-around-192002789.jpg);
-  background-repeat: repeat;
+  width: 50vw;
+  height: 50vw;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-image: url(../img/young-woman-holding-deep-plate-vegetables-her-hands-concept-proper-nutrition-diet-healthy-lifestyle-around-192002789.jpg);
 }
-
 /*------------------------------------------------------HOME: CASOS Y TESTIMONIOS*/
-.section__casos--casosContenedor {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-.section__casos--casosContenedor--caso {
-  border-radius: 15px;
-  width: 250px;
-  height: 300px;
-  margin: 1rem;
-  text-align: center;
-  box-shadow: 2px 2px 10px#999;
-}
-.section__casos--casosContenedor--caso:hover {
-  transition: 0.2s;
-  border-radius: 15px;
-  width: 250px;
-  height: 300px;
-  margin: 1rem;
-  text-align: center;
-  box-shadow: 2px 2px 20px#999;
-}
-.section__casos--casosContenedor--caso img {
+.section__casos--avatar {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 10px;
 }
-
 /*------------------------------------------------------HOME: RECETAS*/
-.section__recetas--selectores ul {
+.section__recetas--selectores {
   display: flex;
   justify-content: space-around;
 }
-.section__recetas--selectores ul li {
-  display: inline-flex;
-}
-.section__recetas--selectores ul li a {
-  text-align: center;
-  vertical-align: middle;
-  padding: 1vh 3vh 1vh 3vh;
-  border-radius: 100px;
-  border: 2px solid teal;
-  color: teal;
-}
-.section__recetas--selectores ul li a:hover {
-  text-align: center;
-  vertical-align: middle;
-  transition: 0.3s;
-  padding: 1vh 3vh 1vh 3vh;
-  border-radius: 100px;
-  border: 2px solid teal;
-  background-color: teal;
-  color: aliceblue;
-}
-.section__recetas--recetas {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-areas:
-    'video simple'
-    'video simple'
-    'video simple2'
-    'video simple2';
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(4, 25%);
-  grid-gap: 1%;
-}
-.section__recetas--recetas--recetaConVideo {
-  border-radius: 15px;
-  grid-area: video;
-}
-.section__recetas--recetas--recetaConImagen1 {
-  border-radius: 15px;
-  grid-area: simple;
-}
-.section__recetas--recetas--recetaConImagen2 {
-  border-radius: 15px;
-  grid-area: simple2;
-}
-.section__recetas--recetas--recetaConVideo {
-  border-radius: 15px;
-  box-shadow: 2px 2px 10px#999;
-  grid-area: video;
-}
-.section__recetas--recetas--recetaConVideo:hover {
-  transition: 0.2s;
-  border-radius: 15px;
-  box-shadow: 2px 2px 20px#999;
-}
-.section__recetas--recetas--recetaConVideo iframe {
+iframe {
   width: 100%;
-  border-radius: 15px 15px 0px 0px;
-}
-.section__recetas--recetas--recetaConVideo--texts {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2vh;
-}
-.section__recetas--recetas--recetaConImagen1 {
-  border-radius: 15px;
-  grid-area: simple;
-  box-shadow: 2px 2px 10px#999;
-}
-.section__recetas--recetas--recetaConImagen1:hover {
-  transition: 0.2s;
-  border-radius: 15px;
-  grid-area: simple;
-  box-shadow: 2px 2px 20px#999;
-}
-.section__recetas--recetas--recetaConImagen2 {
-  border-radius: 15px;
-  grid-area: simple2;
-  box-shadow: 2px 2px 10px#999;
-}
-.section__recetas--recetas--recetaConImagen2:hover {
-  transition: 0.2s;
-  border-radius: 15px;
-  grid-area: simple2;
-  box-shadow: 2px 2px 20px#999;
-}
-.section__recetas--recetas--recetaConImagen--img {
+  height: 40vh;
   background-color: aqua;
-  background-image: url(../img/recipe2.jpeg);
-  background-size: cover;
-  width: 30%;
-  height: 100%;
-  border-radius: 15px 0px 0px 15px;
-  float: left;
+  border-radius: 10px 10px 0px 0px;
 }
-.section__recetas--recetas--recetaConImagen--texts {
-  width: 60%;
-  float: right;
-  margin-top: 2%;
-  margin-right: 5%;
+.infoReceta {
+  height: 20vh;
+  overflow-y: scroll;
 }
-.section__recetas--recetas--mas {
-  display: block;
-  clear: both;
-  width: 2.5vw;
-  height: 2.5vw;
-  border: 0px;
-  border-radius: 100vh;
-  margin: auto;
-  margin-top: 2rem;
-}
-
 /*-------------------------------------------------------------------------------------CASOS*/
-.section__casos--title {
-  margin-left: 5vw;
-  font-size: 3.5vh;
-}
 .section__casos--caso {
-  width: 85%;
-  margin: auto;
-  margin-bottom: 3%;
   border-radius: 15px;
   box-shadow: 2px 2px 10px#999;
-  display: flex;
 }
 .section__casos--caso:hover {
   transition: 0.2s;
-  width: 85%;
-  margin: auto;
-  margin-bottom: 3%;
   border-radius: 15px;
   box-shadow: 2px 2px 20px#999;
 }
 .section__casos--caso--antes {
-  width: 60%;
-  min-height: 40vh;
   border-radius: 15px 0 0 15px;
-  background-image: url(../img/recipe.jpg);
+  background-image: url(../img/antes.png);
   background-size: cover;
   background-position: center;
-}
-.section__casos--caso--descripcion {
-  padding: 2% 3% 2% 3%;
-  width: auto;
 }
 .section__casos--caso--despues {
-  width: 60%;
-  min-height: 40vh;
   border-radius: 0 15px 15px 0;
-  background-image: url(../img/recipe.jpg);
+  background-image: url(../img/despues.png);
   background-size: cover;
   background-position: center;
 }
-.section__casos--title2 {
-  text-align: center;
-  width: 60%;
-  margin: auto;
-}
-
 /*-------------------------------------------------------------------------------------PLANES*/
-.section__planes--plan {
-  width: 85%;
-  margin: auto;
-}
-.section__planes--plan--tabla {
-  width: 100%;
-  border-collapse: collapse;
-}
-.section__planes--plan--tabla td {
-  padding: 1%;
-  text-align: center;
-}
-.section__planes--plan--tabla th {
-  padding: 1%;
-  text-align: center;
-}
 .tabla__mb {
   border-bottom: teal 2.5px solid;
 }
 .tabla__mr {
   border-right: teal 2.5px solid;
 }
-.section__planes--info {
-  width: 85%;
-  margin: auto;
-}
 
 /*-------------------------------------------------------------------------------------RECETAS*/
-.recetas--recetas--recetaConImagen {
-  border-radius: 15px;
-  width: 70%;
-  height: 500px;
-  height: 25vh;
-  margin: auto;
-  margin-top: 3rem;
-  box-shadow: 2px 2px 10px#999;
-  display: flex;
+
+.section__recetas--selectores a {
+  white-space: nowrap;
+  display: block;
+  text-align: center;
+  margin: 5px;
+  padding: 1vh 3vh 1vh 3vh;
 }
-.recetas--recetas--recetaConImagen:hover {
+.section__receta {
+  box-shadow: 2px 2px 10px#999;
+}
+.section__receta:hover {
   transition: 0.2s;
-  border-radius: 15px;
-  width: 70%;
-  margin: auto;
-  margin-top: 3rem;
   box-shadow: 2px 2px 20px#999;
 }
-.recetas--recetas--recetaConImagen--img {
-  background-color: aqua;
+.section__receta--img {
   background-image: url(../img/recipe2.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
-  width: 20%;
-  height: 100%;
-  border-radius: 15px 0px 0px 15px;
-  float: left;
+  border-radius: 10px 0px 0px 10px;
 }
-.recetas--recetas--recetaConImagen--ingredientes {
-  width: 20%;
-  float: right;
-  margin: auto 2% auto 5%;
-}
-.recetas--recetas--recetaConImagen--texts {
-  width: 60%;
-  height: 80%;
-  float: right;
-  margin: auto;
-}
-.recetas--recetas--recetaConImagen--texts p {
-  height: 70%;
-  margin-right: 5%;
-  overflow-y: scroll;
-}
-.recetas--recetas--recetaConImagen--texts a {
-  font-size: 16px;
-}
-.recetas--recetas--mas {
+
+.mas {
   margin-top: 2rem;
+  border-radius: 100px;
 }
 
 /*-------------------------------------------------------------------------------------CONTACTO*/
-.section__contacto {
-  display: grid;
-  grid-template-areas:
-    'inputs textarea'
-    'button button';
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
-}
-.section__contacto label {
-  display: none;
-}
-.section__contacto--form--left {
-  grid-area: inputs;
-}
-.section__contacto--form--left input {
-  height: 10%;
-  width: 90%;
-  border-radius: 7px;
-  border: 2px solid teal;
-  display: flex;
-  margin: auto;
-}
-.section__contacto--form--left select {
-  height: 12%;
-  width: 91%;
-  border-radius: 7px;
-  border: 2px solid teal;
-  background-color: white;
-  display: flex;
-  margin: auto;
-}
-.section__contacto--form--right {
-  grid-area: textarea;
-}
-.section__contacto--form--button {
-  grid-area: button;
-  width: 80%;
-  margin: auto;
-}
-.section__contacto--form--right textarea {
-  width: 90%;
-  height: 72%;
-  border-radius: 7px;
-  border: 2px solid teal;
-  display: flex;
-  margin: auto;
-  margin-top: -1.9%;
-}
-.section__contacto--form--button button {
-  width: 81%;
-  border-radius: 7px;
-  margin-top: 1rem;
-  padding: 1rem;
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  border: 2px solid teal;
-}
-.section__redes--redes {
-  height: 30vh;
-  width: 90%;
-  display: flex;
-  margin: auto;
-}
 .section__redes--redes--red {
   width: 10vw;
   height: 10vw;
@@ -516,132 +231,19 @@ p {
   }
   /*-------------------------------------------------------------------------------------COMPONENTES GENERALES*/
   /*-------------------------------------------------------------------------------------HEADER*/
-  .header {
-    width: 100%;
-    height: 15%;
-    display: grid;
-    grid-template-areas: 'brand nav';
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 100%;
-  }
-  .header__nav--brand {
-    font-size: 28px;
-    font-weight: 500;
-    grid-area: brand;
-    margin: auto auto auto 5%;
-  }
-  .header__nav {
-    transition: 0.2s;
-    position: fixed;
-    width: 100%;
-    height: 0vh;
-    margin-top: 7%;
-    margin-left: 100%;
-    text-align: center;
-    background-color: rgba(236, 236, 236, 0.95);
-  }
-  .header label {
-    grid-area: nav;
-    display: flex;
-    margin: auto 5% auto auto;
-  }
-  .header__nav li {
-    display: none;
-    line-height: 30px;
-    margin: 50px 0;
-  }
-  .header__nav--buttons {
-    display: block;
-    height: 50%;
-  }
-  .header__nav--buttons li a {
-    transition: 0.5s;
-    font-size: 18px;
-    margin-top: 0.8%;
-    margin-left: 100%;
-  }
-  .bar-btn {
-    font-size: 25px;
-    cursor: pointer;
-  }
-  #check {
-    display: none;
-  }
-  #check:checked ~ .header__nav {
-    height: 45%;
-    margin-left: 0%;
-  }
-  #check:checked ~ .header__nav li {
-    display: block;
-  }
-  #check:checked ~ .header__nav li a {
-    display: block;
-    margin-left: 0%;
-  }
   /*-------------------------------------------------------------------------------------FOOTER*/
-  .footer {
-    width: 100%;
-    height: 20vh;
-    margin-top: 10vh;
-    background-color: teal;
-    padding-top: 10%;
-  }
-  .footer__info {
-    width: 70%;
-    height: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-areas: 'info1' 'info2' 'info3';
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3, 15%);
-    gap: 10%;
-  }
-  .footer__info--sec {
-    display: none;
-  }
-  .footer__info--col1 {
-    grid-area: info1;
-    height: 70%;
-  }
-  .footer__info--col2 {
-    grid-area: info2;
-
-    height: 70%;
-  }
-  .footer__info--col3 {
-    grid-area: info3;
-    height: 70%;
-  }
-  .footer__info--col {
-    margin: auto;
-  }
-  .footer__info--col a {
-    color: aliceblue;
-  }
   /*-------------------------------------------------------------------------------------INDEX*/
   /*------------------------------------------------------HOME: HERO*/
   .section__hero {
     height: 90vh;
     width: 100%;
-    display: grid;
-    grid-template-areas: 'top' 'bottom';
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 100%;
-  }
-  .section__hero--left {
-    grid-area: bottom;
-  }
-  .section__hero--left--texts {
-    margin-top: 5%;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
   }
   .section__hero--left--texts h1 {
     margin-left: 0vw;
-    font-size: 7vh;
+    font-size: 5vh;
     text-align: center;
   }
+
   .section__hero--left--texts button {
     border: 0px;
     width: 100%;
@@ -649,269 +251,48 @@ p {
     border-radius: 100vh;
   }
   .section__hero--right {
-    grid-area: top;
-    background-image: url(../img/young-woman-holding-deep-plate-vegetables-her-hands-concept-proper-nutrition-diet-healthy-lifestyle-around-192002789.jpg);
-    background-repeat: repeat;
-    background-size: cover;
+    width: 107%;
+    height: 50vh;
+    background-color: aqua;
   }
+
   /*------------------------------------------------------HOME: CASOS Y TESTIMONIOS*/
-  .section__casos--casosContenedor {
-    width: 90%;
-    height: 90vh;
-    margin: auto;
-    display: block;
+
+  /*------------------------------------------------------HOME: RECETAS*/
+  .infoReceta {
+    height: 40vh;
     overflow-y: scroll;
   }
-  .section__casos--casosContenedor--caso {
-    border-radius: 15px;
-    width: 80vw;
-    height: 80vw;
-    margin: 1rem auto 1rem auto;
-    text-align: center;
-    box-shadow: 2px 2px 10px#999;
-  }
-  .section__casos--casosContenedor--caso p {
-    margin: 10vw auto 10vw auto;
-    width: 80%;
-  }
-  .section__casos--casosContenedor--caso:hover {
-    transition: 0.2s;
-    border-radius: 15px;
-    width: 80vw;
-    height: 80vw;
-    margin: 1rem auto 1rem auto;
-    text-align: center;
-    box-shadow: 2px 2px 20px#999;
-  }
-  .section__casos--casosContenedor--caso img {
-    width: 45%;
-    margin: auto;
-    margin-top: 5%;
-  }
-  /*------------------------------------------------------HOME: RECETAS*/
-  .section__recetas--selectores ul {
-    display: flex;
-    padding-left: 80%;
-  }
-  .section__recetas--selectores ul li {
-    display: inline-flex;
-  }
-  .section__recetas--selectores ul li a {
+  .section__recetas--selectores a {
     white-space: nowrap;
     display: block;
     text-align: center;
     margin: 5px;
     padding: 1vh 3vh 1vh 3vh;
-    border-radius: 100px;
-    border: 2px solid teal;
-    color: teal;
-  }
-  .section__recetas--selectores ul li a:hover {
-    text-align: center;
-    vertical-align: middle;
-    transition: 0.3s;
-    padding: 1vh 3vh 1vh 3vh;
-    border-radius: 100px;
-    border: 2px solid teal;
-    background-color: teal;
-    color: aliceblue;
-  }
-  .section__recetas--recetas {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-areas:
-      'video'
-      'simple'
-      'simple2';
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(4, 25%);
-    grid-gap: 1%;
-  }
-  .section__recetas--recetas--recetaConImagen1 {
-    border-radius: 15px;
-    grid-area: simple;
-  }
-  .section__recetas--recetas--recetaConImagen2 {
-    border-radius: 15px;
-    grid-area: simple2;
-  }
-  .section__recetas--recetas--recetaConVideo {
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px#999;
-    grid-area: video;
-  }
-  .section__recetas--recetas--recetaConVideo:hover {
-    transition: 0.2s;
-    border-radius: 15px;
-    box-shadow: 2px 2px 20px#999;
-  }
-  .section__recetas--recetas--recetaConVideo iframe {
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
-  }
-  .section__recetas--recetas--recetaConVideo--texts {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
-  }
-  .section__recetas--recetas--recetaConImagen1 {
-    border-radius: 15px;
-    grid-area: simple;
-    box-shadow: 2px 2px 10px#999;
-  }
-  .section__recetas--recetas--recetaConImagen1:hover {
-    transition: 0.2s;
-    border-radius: 15px;
-    grid-area: simple;
-    box-shadow: 2px 2px 20px#999;
-  }
-  .section__recetas--recetas--recetaConImagen2 {
-    border-radius: 15px;
-    grid-area: simple2;
-    box-shadow: 2px 2px 10px#999;
-  }
-  .section__recetas--recetas--recetaConImagen2:hover {
-    transition: 0.2s;
-    border-radius: 15px;
-    grid-area: simple2;
-    box-shadow: 2px 2px 20px#999;
-  }
-  .section__recetas--recetas--recetaConImagen--img {
-    background-color: aqua;
-    background-image: url(../img/recipe2.jpeg);
-    background-size: cover;
-    width: 30%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-    float: left;
-  }
-  .section__recetas--recetas--recetaConImagen--texts {
-    width: 60%;
-    float: right;
-    margin-top: 2%;
-    margin-right: 5%;
-  }
-  .section__recetas--recetas--mas {
-    display: block;
-    clear: both;
-    width: 14vw;
-    height: 14vw;
-    border: 0px;
-    border-radius: 100vh;
-    margin: auto;
-    margin-top: 4rem;
   }
   /*-------------------------------------------------------------------------------------CASOS*/
-  .section__casos--title {
-    margin-left: 5vw;
-    font-size: 3.5vh;
-  }
-  .section__casos--caso {
-    width: 85%;
-    margin: auto;
-    margin-bottom: 3%;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px#999;
-    display: grid;
-    grid-template-areas: 'antes' 'desc' 'despues';
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(3, 33%);
-  }
-  .section__casos--caso:hover {
-    transition: 0.2s;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 3%;
-    border-radius: 15px;
-    box-shadow: 2px 2px 20px#999;
-  }
   .section__casos--caso--antes {
-    grid-area: antes;
+    /*grid-area: antes;*/
     width: 100%;
     min-height: 40vh;
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
     background-image: url(../img/antes.png);
     background-size: cover;
     background-position: center;
   }
-  .section__casos--caso--descripcion {
-    padding: 2% 3% 2% 3%;
-    width: auto;
-  }
   .section__casos--caso--despues {
     width: 100%;
     min-height: 40vh;
-    border-radius: 0 0 15px 15px;
+    border-radius: 0 0 10px 10px;
     background-image: url(../img/despues.png);
     background-size: cover;
     background-position: center;
   }
-  .section__casos--title2 {
-    text-align: center;
-    width: 90%;
-    margin: auto;
-  }
   /*-------------------------------------------------------------------------------------CONTACTO*/
-  .section__contacto {
-    display: grid;
-    grid-template-areas:
-      'inputs'
-      'textarea'
-      'button';
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(3, 33%);
-  }
-  .section__contacto label {
-    display: none;
-  }
-  .section__contacto--form--left {
-    grid-area: inputs;
-  }
-  .section__contacto--form--left input {
-    height: 20px;
-    width: 90%;
-    border-radius: 7px;
-    border: 2px solid teal;
-    display: flex;
-    margin: auto;
-  }
-  .section__contacto--form--left select {
-    height: 25px;
-    width: 91%;
-    border-radius: 7px;
-    border: 2px solid teal;
-    background-color: white;
-    display: flex;
-    margin: auto;
-  }
-  .section__contacto--form--right {
-    grid-area: textarea;
-  }
   .section__contacto--form--button {
     grid-area: button;
     width: 80%;
     margin: auto;
-  }
-  .section__contacto--form--right textarea {
-    width: 90%;
-    height: 72%;
-    border-radius: 7px;
-    border: 2px solid teal;
-    display: flex;
-    margin: auto;
-    margin-top: -1.9%;
-  }
-  .section__contacto--form--button button {
-    width: 100%;
-    border-radius: 7px;
-    margin-top: 1rem;
-    padding: 1rem;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    border: 2px solid teal;
   }
   .section__redes--redes {
     height: 10vh;
@@ -944,85 +325,11 @@ p {
     background-repeat: no-repeat;
     background-position: center;
   }
+
   /*--------------------------------------------------------------------RECETAS*/
-  .recetas--recetas--recetaConImagen {
-    border-radius: 15px;
-    width: 90%;
-    height: 25vh;
-    margin: auto;
-    margin-top: 2rem;
-    box-shadow: 2px 2px 10px#999;
-    display: grid;
-    grid-template-areas: 'img info';
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-    overflow-x: scroll;
-    overflow: red;
-  }
-  .recetas--recetas--recetaConImagen:hover {
-    transition: 0.2s;
-    border-radius: 15px;
-    width: 90%;
-    height: 25vh;
-    margin: auto;
-    margin-top: 2rem;
-    box-shadow: 2px 2px 20px#999;
-    display: grid;
-    grid-template-areas: 'img info';
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
-  }
-  .recetas--recetas--recetaConImagen--img {
-    grid-area: img;
-    width: 100%;
-    background-image: url(../img/recipe2.jpeg);
-    background-size: cover;
-    border-radius: 15px 0px 0px 15px;
-  }
-  .recetas--recetas--recetaConImagen--ingredientes {
-    grid: info;
-    width: 60%;
-    margin: auto;
-  }
-  .recetas--recetas--recetaConImagen--ingredientes p {
-    margin-bottom: -2%;
-    margin-top: -2%;
-  }
-  .recetas--recetas--recetaConImagen--texts {
-    display: none;
-  }
-  .recetas--recetas--mas {
-    margin-top: 2rem;
-  }
   /*------------------------------------------------------------PLANES*/
-  .section__planes--plan--info {
-    width: 85%;
-    margin: auto;
-  }
   .section__planes--plan {
     width: 100%;
     overflow: scroll;
-  }
-  .section__planes--plan--tabla {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  .section__planes--plan--tabla td {
-    padding-right: 15px;
-    text-align: center;
-  }
-  .section__planes--plan--tabla th {
-    padding-right: 15px;
-    text-align: center;
-  }
-  .tabla__mb {
-    border-bottom: teal 2.5px solid;
-  }
-  .tabla__mr {
-    border-right: teal 2.5px solid;
-  }
-  .section__planes--info {
-    width: 85%;
-    margin: auto;
   }
 }

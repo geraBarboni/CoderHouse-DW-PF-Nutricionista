@@ -5,234 +5,304 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Nutricionista</title>
   </head>
   <body>
     <!--HEADER-->
-    <header class="header">
-      <div class="header__nav--brand"><a href="../index.html">Brand</a></div>
-      <input type="checkbox" id="check" />
-      <label for="check" class="bar-btn">menu</label>
-      <nav class="header__nav">
-        <ul class="header__nav--buttons">
-          <li><a href="./casos.html">Casos</a></li>
-          <li><a href="./planes.html">Planes</a></li>
-          <li><a href="./recetas.html">Recetas</a></li>
-          <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light m-0">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-2" href="../index.html">Brand</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a class="nav-link" href="./casos.html">Casos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./recetas.html">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">
+                  Contacto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <!--MAIN-->
     <main>
       <section>
         <div>
-          <h2>Recetas</h2>
-          <div class="section__recetas--selectores">
-            <ul>
-              <li><a href="">todas</a></li>
-              <li><a href="">bajas calorias</a></li>
-              <li><a href="">caloricas</a></li>
-              <li><a href="">veganas</a></li>
-              <li><a href="">vegetarianas</a></li>
-              <li><a href="">alta en proteinas</a></li>
-            </ul>
-          </div>
-          <div>
-              <div class="recetas--recetas--recetaConImagen">
-                <div class="recetas--recetas--recetaConImagen--img">
-                </div>
-                <div class="recetas--recetas--recetaConImagen--ingredientes">
-                  <h3>Receta dos</h3>
-                  <p>Ingredientes</p>
-                  <ul>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                  </ul>
-                </div>
-                <div class="recetas--recetas--recetaConImagen--texts">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati facere eum minus perferendis? Incidunt pariatur
-                    dolorum eos voluptas velit soluta praesentium facilis in,
-                    modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Obcaecati facere eum
-                    minus perferendis? Incidunt pariatur dolorum eos voluptas
-                    velit soluta praesentium facilis in, modi saepe rem numquam
-                    quis. Quas, nulla!
-                  </p>
-                  <a href="#">Ver mas</a>
-                </div>
-              </div>
-            </div>
-              <div class="recetas--recetas--recetaConImagen">
-                <div class="recetas--recetas--recetaConImagen--img">
-                </div>
-                <div class="recetas--recetas--recetaConImagen--ingredientes">
-                  <h3>Receta dos</h3>
-                  <p>Ingredientes</p>
-                  <ul>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                  </ul>
-                </div>
-                <div class="recetas--recetas--recetaConImagen--texts">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati facere eum minus perferendis? Incidunt pariatur
-                    dolorum eos voluptas velit soluta praesentium facilis in,
-                    modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Obcaecati facere eum
-                    minus perferendis? Incidunt pariatur dolorum eos voluptas
-                    velit soluta praesentium facilis in, modi saepe rem numquam
-                    quis. Quas, nulla!
-                  </p>
-                  <a href="#">Ver mas</a>
-                </div>
-              </div>
-            </div>
-              <div class="recetas--recetas--recetaConImagen">
-                <div class="recetas--recetas--recetaConImagen--img">
-                </div>
-                <div class="recetas--recetas--recetaConImagen--ingredientes">
-                  <h3>Receta dos</h3>
-                  <p>Ingredientes</p>
-                  <ul>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                  </ul>
-                </div>
-                <div class="recetas--recetas--recetaConImagen--texts">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati facere eum minus perferendis? Incidunt pariatur
-                    dolorum eos voluptas velit soluta praesentium facilis in,
-                    modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Obcaecati facere eum
-                    minus perferendis? Incidunt pariatur dolorum eos voluptas
-                    velit soluta praesentium facilis in, modi saepe rem numquam
-                    quis. Quas, nulla!
-                  </p>
-                  <a href="#">Ver mas</a>
-                </div>
-              </div>
-            </div>
-              <div class="recetas--recetas--recetaConImagen">
-                <div class="recetas--recetas--recetaConImagen--img">
-                </div>
-                <div class="recetas--recetas--recetaConImagen--ingredientes">
-                  <h3>Receta dos</h3>
-                  <p>Ingredientes</p>
-                  <ul>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                  </ul>
-                </div>
-                <div class="recetas--recetas--recetaConImagen--texts">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati facere eum minus perferendis? Incidunt pariatur
-                    dolorum eos voluptas velit soluta praesentium facilis in,
-                    modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Obcaecati facere eum
-                    minus perferendis? Incidunt pariatur dolorum eos voluptas
-                    velit soluta praesentium facilis in, modi saepe rem numquam
-                    quis. Quas, nulla!
-                  </p>
-                  <a href="#">Ver mas</a>
-                </div>
-              </div>
-            </div>
-              <div class="recetas--recetas--recetaConImagen">
-                <div class="recetas--recetas--recetaConImagen--img">
-                </div>
-                <div class="recetas--recetas--recetaConImagen--ingredientes">
-                  <h3>Receta dos</h3>
-                  <p>Ingredientes</p>
-                  <ul>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                    <li>ingrediente</li>
-                  </ul>
-                </div>
-                <div class="recetas--recetas--recetaConImagen--texts">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Obcaecati facere eum minus perferendis? Incidunt pariatur
-                    dolorum eos voluptas velit soluta praesentium facilis in,
-                    modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
-                    sit amet consectetur, adipisicing elit. Obcaecati facere eum
-                    minus perferendis? Incidunt pariatur dolorum eos voluptas
-                    velit soluta praesentium facilis in, modi saepe rem numquam
-                    quis. Quas, nulla!
-                  </p>
-                  <a href="#">Ver mas</a>
-                </div>
-              </div>
-            </div>
-            <div>
-              <button class="section__recetas--recetas--mas">+</button>
+          <h2 class="mt-4">Recetas</h2>
+          <div class="row mt-4 mb-4">
+            <div class="col-12 section__recetas--selectores overflow-auto">
+              <a class="btn btn-secondary">todas</a>
+              <a class="btn btn-secondary">bajas calorias</a>
+              <a class="btn btn-secondary">caloricas</a>
+              <a class="btn btn-secondary">veganas</a>
+              <a class="btn btn-secondary">vegetarianas</a>
+              <a class="btn btn-secondary">alta en proteinas</a>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="container">
+            <div class="card mb-3 section__receta">
+              <div class="row g-0">
+                <div class="col-3 section__receta--img">
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h3>Receta dos</h3>
+                        <p>Ingredientes</p>
+                        <ul>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                        </ul>
+                      </div>
+                      <div class="d-none d-md-block col-md-8 ">
+                        <p class="infoReceta">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Obcaecati facere eum minus perferendis? Incidunt pariatur
+                          dolorum eos voluptas velit soluta praesentium facilis in,
+                          modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
+                          sit amet consectetur, adipisicing elit. Obcaecati facere eum
+                          minus perferendis? Incidunt pariatur dolorum eos voluptas
+                          velit soluta praesentium facilis in, modi saepe rem numquam
+                          quis. Quas, nulla!
+                        </p>
+                        <a href="#">Ver mas</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 section__receta">
+              <div class="row g-0">
+                <div class="col-3 section__receta--img">
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h3>Receta dos</h3>
+                        <p>Ingredientes</p>
+                        <ul>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                        </ul>
+                      </div>
+                      <div class="d-none d-md-block col-md-8 ">
+                        <p class="infoReceta">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Obcaecati facere eum minus perferendis? Incidunt pariatur
+                          dolorum eos voluptas velit soluta praesentium facilis in,
+                          modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
+                          sit amet consectetur, adipisicing elit. Obcaecati facere eum
+                          minus perferendis? Incidunt pariatur dolorum eos voluptas
+                          velit soluta praesentium facilis in, modi saepe rem numquam
+                          quis. Quas, nulla!
+                        </p>
+                        <a href="#">Ver mas</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 section__receta">
+              <div class="row g-0">
+                <div class="col-3 section__receta--img">
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h3>Receta dos</h3>
+                        <p>Ingredientes</p>
+                        <ul>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                        </ul>
+                      </div>
+                      <div class="d-none d-md-block col-md-8 ">
+                        <p class="infoReceta">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Obcaecati facere eum minus perferendis? Incidunt pariatur
+                          dolorum eos voluptas velit soluta praesentium facilis in,
+                          modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
+                          sit amet consectetur, adipisicing elit. Obcaecati facere eum
+                          minus perferendis? Incidunt pariatur dolorum eos voluptas
+                          velit soluta praesentium facilis in, modi saepe rem numquam
+                          quis. Quas, nulla!
+                        </p>
+                        <a href="#">Ver mas</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 section__receta">
+              <div class="row g-0">
+                <div class="col-3 section__receta--img">
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h3>Receta dos</h3>
+                        <p>Ingredientes</p>
+                        <ul>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                        </ul>
+                      </div>
+                      <div class="d-none d-md-block col-md-8 ">
+                        <p class="infoReceta">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Obcaecati facere eum minus perferendis? Incidunt pariatur
+                          dolorum eos voluptas velit soluta praesentium facilis in,
+                          modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
+                          sit amet consectetur, adipisicing elit. Obcaecati facere eum
+                          minus perferendis? Incidunt pariatur dolorum eos voluptas
+                          velit soluta praesentium facilis in, modi saepe rem numquam
+                          quis. Quas, nulla!
+                        </p>
+                        <a href="#">Ver mas</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 section__receta">
+              <div class="row g-0">
+                <div class="col-3 section__receta--img">
+                </div>
+                <div class="col-9">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12 col-md-4">
+                        <h3>Receta dos</h3>
+                        <p>Ingredientes</p>
+                        <ul>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                          <li>ingrediente</li>
+                        </ul>
+                      </div>
+                      <div class="d-none d-md-block col-md-8 ">
+                        <p class="infoReceta">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          Obcaecati facere eum minus perferendis? Incidunt pariatur
+                          dolorum eos voluptas velit soluta praesentium facilis in,
+                          modi saepe rem numquam quis. Quas, nulla! Lorem ipsum dolor
+                          sit amet consectetur, adipisicing elit. Obcaecati facere eum
+                          minus perferendis? Incidunt pariatur dolorum eos voluptas
+                          velit soluta praesentium facilis in, modi saepe rem numquam
+                          quis. Quas, nulla!
+                        </p>
+                        <a href="#">Ver mas</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="row">
+              <div class="col-1 m-auto">
+                <button class="btn btn-primary mas">+</button>
+              </div>
+            </div>
+          </div>
+          
     </main>
     <!--FOOTER-->
-    <footer class="footer">
-      <div class="footer__info">
-        <div class="footer__info--col1 footer__info--col">
-          <span>
-            <strong class="footer__info--gral"><a href="">Info</a></strong>
-            <br />
-          </span>
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
+    <footer class="container-fluid footer">
+      <div class="row">
+        <div class="col-12 col-md-4">
+          <a href="" class="d-block text-center">
+            <span class="footer__info">Info</span>
+          </a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
         </div>
-        <div class="footer__info--col2 footer__info--col">
-          <span>
-            <strong class="footer__info--gral"><a href="">Info</a></strong>
-            <br />
-          </span>
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
+        <div class="col-12 col-md-4">
+          <a href="" class="d-block text-center">
+            <span class="footer__info">Info</span>
+          </a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
         </div>
-        <div class="footer__info--col3 footer__info--col">
-          <span>
-            <strong class="footer__info--gral"><a href="">Info</a></strong>
-            <br />
-          </span>
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
-          <span class="footer__info--sec"><a href="">lorem</a></span>
-          <br />
+        <div class="col-12 col-md-4">
+          <a href="" class="d-block text-center">
+            <span class="footer__info">Info</span>
+          </a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
+          <a href="" class="d-none d-md-block text-center">Info</a>
         </div>
       </div>
     </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
