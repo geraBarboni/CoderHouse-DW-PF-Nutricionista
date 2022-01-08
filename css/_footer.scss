@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  height: auto;
+  margin-top: 10vh;
+  padding: 2%;
+  background-color: $colorPrimario;
+}
+.footer a {
+  color: $colorTerciario;
+}
+.footer__info {
+  font-weight: bold;
+}
