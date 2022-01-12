@@ -1,6 +1,6 @@
 /*-------------------------------------------------------------------------------------GENERALES*/
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 a {
@@ -130,8 +130,8 @@ p {
 }
 
 .section__hero--right {
-  width: 50vw;
-  height: 50vw;
+  width: 35vw;
+  height: 35vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
