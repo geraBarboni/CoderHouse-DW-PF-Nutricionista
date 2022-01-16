@@ -4,7 +4,7 @@ $colorTerciario: aliceblue;
 $colorBlack: black;
 $colorActive: aqua;
 * {
-  font-family: "Outfit", sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 a {
   text-decoration: none;
@@ -71,7 +71,35 @@ p {
 }
 .card {
   border-radius: 10px;
+  box-shadow: 2px 2px 10px#999;
+}
+.card:hover {
+  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px#999;
 }
 .round-left {
   border-radius: 10px 0px 0px 10px;
+}
+.mas {
+  margin-top: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: $colorPrimario;
+  color: $colorTerciario;
+  border: $colorPrimario solid 2px;
+  border-radius: 100px;
+  font-size: 20px;
+}
+.mas:hover {
+  transition: 0.3s;
+  margin-top: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: $colorSecundario;
+  color: $colorTerciario;
+  border: $colorSecundario solid 2px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 500;
 }

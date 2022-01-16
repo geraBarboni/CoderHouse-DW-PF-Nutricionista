@@ -1,3 +1,5 @@
+/*-------------------------------------------------------------------------------------ANIMATE.CSS*/
+@import '../node_modules/animate.css/animate.css';
 /*-------------------------------------------------------------------------------------GENERALES*/
 * {
   font-family: "Outfit", sans-serif;
@@ -80,10 +82,41 @@ p {
 
 .card {
   border-radius: 10px;
+  box-shadow: 2px 2px 10px #999;
+}
+
+.card:hover {
+  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px #999;
 }
 
 .round-left {
   border-radius: 10px 0px 0px 10px;
+}
+
+.mas {
+  margin-top: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: teal;
+  color: aliceblue;
+  border: teal solid 2px;
+  border-radius: 100px;
+  font-size: 20px;
+}
+
+.mas:hover {
+  transition: 0.3s;
+  margin-top: 2rem;
+  width: 50px;
+  height: 50px;
+  background-color: #03b1b1;
+  color: aliceblue;
+  border: #03b1b1 solid 2px;
+  border-radius: 100px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*-------------------------------------------------------------------------------------FOOTER*/
@@ -116,6 +149,7 @@ p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin: auto;
 }
 
 .section__hero--left--texts h1 {
@@ -129,13 +163,13 @@ p {
   border-radius: 100vh;
 }
 
-.section__hero--right {
-  width: 50vw;
-  height: 50vw;
+.section__hero--right--img {
+  width: 40vw;
+  height: 40vw;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
-  background-image: url(../img/young-woman-holding-deep-plate-vegetables-her-hands-concept-proper-nutrition-diet-healthy-lifestyle-around-192002789.jpg);
+  background-image: url(../img/aa.svg);
 }
 
 /*------------------------------------------------------HOME: CASOS Y TESTIMONIOS*/
@@ -143,6 +177,13 @@ p {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 10px;
+  border-radius: 100%;
+}
+
+.section__casos--caso:hover .section__casos--avatar {
+  transition: 0.3s;
+  border-radius: 100%;
+  box-shadow: 2px 2px 10px #999;
 }
 
 /*------------------------------------------------------HOME: RECETAS*/
@@ -157,9 +198,19 @@ iframe {
   border-radius: 10px 10px 0px 0px;
 }
 
-.infoReceta {
-  height: 20vh;
-  overflow-y: scroll;
+.section__recetas {
+  background-color: khaki;
+  display: flex;
+}
+
+.section__recetas--recetas {
+  background-color: lightcoral;
+}
+
+.section__recetas--recetas--receta {
+  width: 45%;
+  margin: 0.5rem;
+  background-color: lawngreen;
 }
 
 /*-------------------------------------------------------------------------------------CASOS*/
@@ -216,7 +267,7 @@ iframe {
 }
 
 .section__receta--img {
-  background-image: url(../img/recipe2.jpeg);
+  background-image: url(../img/recipe2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px 0px 0px 10px;
@@ -286,6 +337,15 @@ iframe {
   .section__hero--right {
     width: 107%;
     height: 50vh;
+  }
+
+  .section__hero--right--img {
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/young-woman-holding-deep-plate-v.jpg);
   }
 
   /*------------------------------------------------------HOME: RECETAS*/
