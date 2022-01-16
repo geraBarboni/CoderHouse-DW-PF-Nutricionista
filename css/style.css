@@ -1,42 +1,49 @@
-/*-------------------------------------------------------------------------------------GENERAL*/
+/*-------------------------------------------------------------------------------------GENERALES*/
 * {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   transition: 0.2s;
   text-decoration: none;
   color: teal;
 }
+
 .btn-primary {
   color: aliceblue;
   background-color: teal;
   border: 0;
   border-radius: 100px;
 }
+
 .btn-primary:hover {
   font-weight: 500;
   transition: 0.3s;
   color: aliceblue;
   border: 0;
-  background-color: rgb(3, 177, 177);
+  background-color: #03b1b1;
 }
+
 .btn-primary:focus {
   font-weight: 500;
   transition: 0.3s;
-  color: aliceblue;
+  color: teal;
   border: 0;
-  background-color: rgb(3, 177, 177);
+  background-color: aqua;
 }
+
 .btn-secondary {
   color: teal;
   background-color: aliceblue;
   border: 2px solid teal;
   border-radius: 100px;
 }
+
 .btn-secondary:hover {
   font-weight: 500;
   transition: 0.3s;
@@ -44,6 +51,7 @@ a:hover {
   border: 2px solid teal;
   background-color: teal;
 }
+
 .btn-secondary:focus {
   font-weight: 500;
   transition: 0.3s;
@@ -51,28 +59,33 @@ a:hover {
   border: 0;
   background-color: aliceblue;
 }
+
 h1 {
   margin-left: 5vw;
   font-size: 4.5vh;
 }
+
 h2 {
   margin-left: 5vw;
   font-size: 4vh;
 }
+
 h3 {
   font-size: 2.5vh;
 }
+
 p {
   font-size: 1.2rem;
 }
+
 .card {
   border-radius: 10px;
 }
+
 .round-left {
   border-radius: 10px 0px 0px 10px;
 }
 
-/*-------------------------------------------------------------------------------------COMPONENTES GENERALES*/
 /*-------------------------------------------------------------------------------------FOOTER*/
 .footer {
   width: 100%;
@@ -81,12 +94,15 @@ p {
   padding: 2%;
   background-color: teal;
 }
+
 .footer a {
   color: aliceblue;
 }
+
 .footer__info {
   font-weight: bold;
 }
+
 /*-------------------------------------------------------------------------------------INDEX*/
 /*--------------------------------------------------------------------MAIN*/
 /*------------------------------------------------------HOME: HERO*/
@@ -94,21 +110,25 @@ p {
   height: 75vh;
   width: 100%;
 }
+
 .section__hero--left--texts {
   margin-top: 50%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
+
 .section__hero--left--texts h1 {
   font-size: 7vh;
 }
+
 .section__hero--left--texts button {
   border: 0px;
   width: 25vw;
   height: 4vh;
   border-radius: 100vh;
 }
+
 .section__hero--right {
   width: 50vw;
   height: 50vw;
@@ -117,59 +137,67 @@ p {
   background-position: center;
   background-image: url(../img/young-woman-holding-deep-plate-vegetables-her-hands-concept-proper-nutrition-diet-healthy-lifestyle-around-192002789.jpg);
 }
+
 /*------------------------------------------------------HOME: CASOS Y TESTIMONIOS*/
 .section__casos--avatar {
   width: 50%;
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 /*------------------------------------------------------HOME: RECETAS*/
 .section__recetas--selectores {
   display: flex;
   justify-content: space-around;
 }
+
 iframe {
   width: 100%;
   height: 40vh;
-  background-color: aqua;
   border-radius: 10px 10px 0px 0px;
 }
+
 .infoReceta {
   height: 20vh;
   overflow-y: scroll;
 }
+
 /*-------------------------------------------------------------------------------------CASOS*/
 .section__casos--caso {
   border-radius: 15px;
-  box-shadow: 2px 2px 10px#999;
+  box-shadow: 2px 2px 10px #999;
 }
+
 .section__casos--caso:hover {
   transition: 0.2s;
   border-radius: 15px;
-  box-shadow: 2px 2px 20px#999;
+  box-shadow: 2px 2px 20px #999;
 }
+
 .section__casos--caso--antes {
   border-radius: 15px 0 0 15px;
   background-image: url(../img/antes.png);
   background-size: cover;
   background-position: center;
 }
+
 .section__casos--caso--despues {
   border-radius: 0 15px 15px 0;
   background-image: url(../img/despues.png);
   background-size: cover;
   background-position: center;
 }
+
 /*-------------------------------------------------------------------------------------PLANES*/
 .tabla__mb {
   border-bottom: teal 2.5px solid;
 }
+
 .tabla__mr {
   border-right: teal 2.5px solid;
 }
 
 /*-------------------------------------------------------------------------------------RECETAS*/
-
 .section__recetas--selectores a {
   white-space: nowrap;
   display: block;
@@ -177,13 +205,16 @@ iframe {
   margin: 5px;
   padding: 1vh 3vh 1vh 3vh;
 }
+
 .section__receta {
-  box-shadow: 2px 2px 10px#999;
+  box-shadow: 2px 2px 10px #999;
 }
+
 .section__receta:hover {
   transition: 0.2s;
-  box-shadow: 2px 2px 20px#999;
+  box-shadow: 2px 2px 20px #999;
 }
+
 .section__receta--img {
   background-image: url(../img/recipe2.jpeg);
   background-repeat: no-repeat;
@@ -204,18 +235,21 @@ iframe {
   margin: auto;
   background-color: teal;
 }
+
 .red__uno {
   background-image: url(../img/ig.png);
   background-size: 5vw 5vw;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .red__dos {
   background-image: url(../img/fb.png);
   background-size: 3vw 5vw;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .red__tres {
   background-image: url(../img/yt.png);
   background-size: 5vw 4vw;
@@ -224,20 +258,18 @@ iframe {
 }
 
 /*-------------------------------------------------------------------------------------MOBILE*/
-
 @media only screen and (min-width: 100px) and (max-width: 767px) {
   * {
     transition: all 0.5s;
   }
-  /*-------------------------------------------------------------------------------------COMPONENTES GENERALES*/
-  /*-------------------------------------------------------------------------------------HEADER*/
-  /*-------------------------------------------------------------------------------------FOOTER*/
+
   /*-------------------------------------------------------------------------------------INDEX*/
   /*------------------------------------------------------HOME: HERO*/
   .section__hero {
     height: 90vh;
     width: 100%;
   }
+
   .section__hero--left--texts h1 {
     margin-left: 0vw;
     font-size: 5vh;
@@ -250,19 +282,18 @@ iframe {
     height: 5vh;
     border-radius: 100vh;
   }
+
   .section__hero--right {
     width: 107%;
     height: 50vh;
-    background-color: aqua;
   }
-
-  /*------------------------------------------------------HOME: CASOS Y TESTIMONIOS*/
 
   /*------------------------------------------------------HOME: RECETAS*/
   .infoReceta {
     height: 40vh;
     overflow-y: scroll;
   }
+
   .section__recetas--selectores a {
     white-space: nowrap;
     display: block;
@@ -270,6 +301,7 @@ iframe {
     margin: 5px;
     padding: 1vh 3vh 1vh 3vh;
   }
+
   /*-------------------------------------------------------------------------------------CASOS*/
   .section__casos--caso--antes {
     /*grid-area: antes;*/
@@ -280,6 +312,7 @@ iframe {
     background-size: cover;
     background-position: center;
   }
+
   .section__casos--caso--despues {
     width: 100%;
     min-height: 40vh;
@@ -288,18 +321,21 @@ iframe {
     background-size: cover;
     background-position: center;
   }
+
   /*-------------------------------------------------------------------------------------CONTACTO*/
   .section__contacto--form--button {
     grid-area: button;
     width: 80%;
     margin: auto;
   }
+
   .section__redes--redes {
     height: 10vh;
     width: 90%;
     display: flex;
     margin: auto;
   }
+
   .section__redes--redes--red {
     width: 10vh;
     height: 10vh;
@@ -307,18 +343,21 @@ iframe {
     margin: auto;
     background-color: teal;
   }
+
   .red__uno {
     background-image: url(../img/ig.png);
     background-size: 5vw 5vw;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .red__dos {
     background-image: url(../img/fb.png);
     background-size: 3vw 5vw;
     background-repeat: no-repeat;
     background-position: center;
   }
+
   .red__tres {
     background-image: url(../img/yt.png);
     background-size: 5vw 4vw;
@@ -333,3 +372,5 @@ iframe {
     overflow: scroll;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
