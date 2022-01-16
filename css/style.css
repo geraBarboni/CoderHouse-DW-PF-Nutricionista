@@ -19,24 +19,26 @@ a:hover {
 .btn-primary {
   color: aliceblue;
   background-color: teal;
-  border: 0;
+  border: 0px;
   border-radius: 100px;
 }
 
 .btn-primary:hover {
+  color: aliceblue;
+  background-color: #03b1b1;
+  border: 0px;
+  border-radius: 100px;
   font-weight: 500;
   transition: 0.3s;
-  color: aliceblue;
-  border: 0;
-  background-color: #03b1b1;
 }
 
 .btn-primary:focus {
+  color: teal;
+  background-color: aqua;
+  border: 0px;
+  border-radius: 100px;
   font-weight: 500;
   transition: 0.3s;
-  color: teal;
-  border: 0;
-  background-color: aqua;
 }
 
 .btn-secondary {
@@ -47,19 +49,21 @@ a:hover {
 }
 
 .btn-secondary:hover {
+  color: aliceblue;
+  background-color: teal;
+  border: 2px solid teal;
+  border-radius: 100px;
   font-weight: 500;
   transition: 0.3s;
-  color: aliceblue;
-  border: 2px solid teal;
-  background-color: teal;
 }
 
 .btn-secondary:focus {
+  color: teal;
+  background-color: aliceblue;
+  border: 0;
+  border-radius: 100px;
   font-weight: 500;
   transition: 0.3s;
-  color: teal;
-  border: 0;
-  background-color: aliceblue;
 }
 
 h1 {
@@ -96,7 +100,6 @@ p {
 }
 
 .mas {
-  margin-top: 2rem;
   width: 50px;
   height: 50px;
   background-color: teal;
@@ -108,7 +111,6 @@ p {
 
 .mas:hover {
   transition: 0.3s;
-  margin-top: 2rem;
   width: 50px;
   height: 50px;
   background-color: #03b1b1;
@@ -198,25 +200,42 @@ iframe {
   border-radius: 10px 10px 0px 0px;
 }
 
-.section__recetas {
-  background-color: khaki;
+.section__recetas, .section__recetas--infoReceta, .section__recetas--recetas--receta {
   display: flex;
 }
-
-.section__recetas--recetas {
-  background-color: lightcoral;
-}
-
 .section__recetas--recetas--receta {
   width: 45%;
   margin: 0.5rem;
-  background-color: lawngreen;
+  float: inline-start;
+}
+.section__recetas--infoReceta {
+  height: 28vh;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.section__receta--img-1 {
+  background-image: url(../img/recetas/receta-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.section__receta--img-2 {
+  background-image: url(../img/recetas/receta-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0px 0px 10px;
 }
 
 /*-------------------------------------------------------------------------------------CASOS*/
 .section__casos--caso {
   border-radius: 15px;
   box-shadow: 2px 2px 10px #999;
+  min-height: 30vh;
 }
 
 .section__casos--caso:hover {
@@ -225,16 +244,44 @@ iframe {
   box-shadow: 2px 2px 20px #999;
 }
 
-.section__casos--caso--antes {
+.section__casos--caso--antes-1 {
   border-radius: 15px 0 0 15px;
-  background-image: url(../img/antes.png);
+  background-image: url(../img/casos/antes-1.png);
   background-size: cover;
   background-position: center;
 }
 
-.section__casos--caso--despues {
+.section__casos--caso--despues-1 {
   border-radius: 0 15px 15px 0;
-  background-image: url(../img/despues.png);
+  background-image: url(../img/casos/despues-1.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__casos--caso--antes-2 {
+  border-radius: 15px 0 0 15px;
+  background-image: url(../img/casos/antes-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__casos--caso--despues-2 {
+  border-radius: 0 15px 15px 0;
+  background-image: url(../img/casos/despues-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__casos--caso--antes-3 {
+  border-radius: 15px 0 0 15px;
+  background-image: url(../img/casos/antes-3.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.section__casos--caso--despues-3 {
+  border-radius: 0 15px 15px 0;
+  background-image: url(../img/casos/despues-3.png);
   background-size: cover;
   background-position: center;
 }
@@ -266,16 +313,28 @@ iframe {
   box-shadow: 2px 2px 20px #999;
 }
 
-.section__receta--img {
-  background-image: url(../img/recipe2.jpg);
+.section__receta--img--1 {
+  background-image: url(../img/recetas/receta-1.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 10px 0px 0px 10px;
 }
 
-.mas {
-  margin-top: 2rem;
-  border-radius: 100px;
+.section__receta--img--2 {
+  background-image: url(../img/recetas/receta-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.section__receta--img--3 {
+  background-image: url(../img/recetas/receta-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0px 0px 10px;
 }
 
 /*-------------------------------------------------------------------------------------CONTACTO*/
@@ -341,11 +400,11 @@ iframe {
 
   .section__hero--right--img {
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/young-woman-holding-deep-plate-v.jpg);
+    background-image: url(../img/aa.svg);
   }
 
   /*------------------------------------------------------HOME: RECETAS*/
@@ -362,22 +421,96 @@ iframe {
     padding: 1vh 3vh 1vh 3vh;
   }
 
-  /*-------------------------------------------------------------------------------------CASOS*/
-  .section__casos--caso--antes {
-    /*grid-area: antes;*/
+  .section__recetas, .section__recetas--recetas--receta, .section__recetas--infoReceta {
+    display: flex;
+  }
+  .section__recetas--recetas--receta {
     width: 100%;
+    margin: 0.5rem;
+    float: inline-start;
+  }
+  .section__recetas--infoReceta {
+    height: 28vh;
+    overflow-y: scroll;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+  }
+
+  .section__receta--img--1 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/recetas/receta-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .section__receta--img--2 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/recetas/receta-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  .section__receta--img--3 {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/recetas/receta-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  /*-------------------------------------------------------------------------------------CASOS*/
+  .section__casos--caso--antes-1 {
     min-height: 40vh;
     border-radius: 10px 10px 0 0;
-    background-image: url(../img/antes.png);
+    background-image: url(../img/casos/antes-1.png);
     background-size: cover;
     background-position: center;
   }
 
-  .section__casos--caso--despues {
-    width: 100%;
+  .section__casos--caso--despues-1 {
     min-height: 40vh;
     border-radius: 0 0 10px 10px;
-    background-image: url(../img/despues.png);
+    background-image: url(../img/casos/despues-1.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section__casos--caso--antes-2 {
+    min-height: 40vh;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../img/casos/antes-2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section__casos--caso--despues-2 {
+    min-height: 40vh;
+    border-radius: 0 0 10px 10px;
+    background-image: url(../img/casos/despues-2.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section__casos--caso--antes-3 {
+    min-height: 40vh;
+    border-radius: 10px 10px 0 0;
+    background-image: url(../img/casos/antes-3.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section__casos--caso--despues-3 {
+    min-height: 40vh;
+    border-radius: 0 0 10px 10px;
+    background-image: url(../img/casos/despues-3.png);
     background-size: cover;
     background-position: center;
   }
@@ -426,6 +559,30 @@ iframe {
   }
 
   /*--------------------------------------------------------------------RECETAS*/
+  .section__receta--img--1 {
+    background-image: url(../img/recetas/receta-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .section__receta--img--2 {
+    background-image: url(../img/recetas/receta-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .section__receta--img--3 {
+    background-image: url(../img/recetas/receta-3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+
   /*------------------------------------------------------------PLANES*/
   .section__planes--plan {
     width: 100%;

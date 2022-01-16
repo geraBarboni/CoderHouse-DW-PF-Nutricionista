@@ -15,45 +15,47 @@ a:hover {
   text-decoration: none;
   color: $colorPrimario;
 }
+@mixin botones($color, $bgColor, $border, $borderRadius) {
+  color: $color;
+  background-color: $bgColor;
+  border: $border;
+  border-radius: $borderRadius;
+}
 .btn-primary {
-  color: $colorTerciario;
-  background-color: $colorPrimario;
-  border: 0;
-  border-radius: 100px;
+  @include botones($colorTerciario, $colorPrimario, 0px, 100px);
 }
 .btn-primary:hover {
+  @include botones($colorTerciario, $colorSecundario, 0px, 100px);
   font-weight: 500;
   transition: 0.3s;
-  color: $colorTerciario;
-  border: 0;
-  background-color: $colorSecundario;
 }
 .btn-primary:focus {
+  @include botones($colorPrimario, $colorActive, 0px, 100px);
   font-weight: 500;
   transition: 0.3s;
-  color: $colorPrimario;
-  border: 0;
-  background-color: $colorActive;
 }
 .btn-secondary {
-  color: $colorPrimario;
-  background-color: $colorTerciario;
-  border: 2px solid $colorPrimario;
-  border-radius: 100px;
+  @include botones(
+    $colorPrimario,
+    $colorTerciario,
+    2px solid $colorPrimario,
+    100px
+  );
 }
 .btn-secondary:hover {
+  @include botones(
+    $colorTerciario,
+    $colorPrimario,
+    2px solid $colorPrimario,
+    100px
+  );
   font-weight: 500;
   transition: 0.3s;
-  color: $colorTerciario;
-  border: 2px solid $colorPrimario;
-  background-color: $colorPrimario;
 }
 .btn-secondary:focus {
+  @include botones($colorPrimario, $colorTerciario, 0, 100px);
   font-weight: 500;
   transition: 0.3s;
-  color: $colorPrimario;
-  border: 0;
-  background-color: $colorTerciario;
 }
 h1 {
   margin-left: 5vw;
@@ -82,7 +84,6 @@ p {
   border-radius: 10px 0px 0px 10px;
 }
 .mas {
-  margin-top: 2rem;
   width: 50px;
   height: 50px;
   background-color: $colorPrimario;
@@ -93,7 +94,6 @@ p {
 }
 .mas:hover {
   transition: 0.3s;
-  margin-top: 2rem;
   width: 50px;
   height: 50px;
   background-color: $colorSecundario;
