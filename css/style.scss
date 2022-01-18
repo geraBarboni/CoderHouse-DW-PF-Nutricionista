@@ -65,8 +65,16 @@ iframe {
   &--recetas--receta {
     @extend.section__recetas;
     width: 45%;
+    -webkit-margin: 0.5rem;
+    -webkit-float: inline-start;
+    -moz-margin: 0.5rem;
+    -moz-float: inline-start;
+    -o-margin: 0.5rem;
+    -o-float: inline-start;
+    -ms-margin: 0.5rem;
+    -ms-float: inline-start;
     margin: 0.5rem;
-    float: inline-start;
+    float: left;
   }
   &--infoReceta {
     @extend.section__recetas;
@@ -75,7 +83,16 @@ iframe {
     scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
   }
+  &--infoReceta::-webkit-scrollbar {
+    @extend.section__recetas;
+    width: 0.5rem;
+    background: rgba(0, 0, 0, 0);
+  }
+  &--infoReceta::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+  }
 }
+
 @for $i from 1 through 2 {
   .section__receta--img-#{$i} {
     background-image: url(../img/recetas/receta-#{$i}.png);
