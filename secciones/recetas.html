@@ -51,6 +51,9 @@
             <ul
               class="navbar-nav ms-auto mb-2 mb-lg-0"
             >
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
               <li class="nav-item">
                 <a class="nav-link" href="./casos.html">Casos</a>
               </li>
@@ -72,10 +75,10 @@
     </header>
     <!--MAIN-->
     <main>
-      <section>
+      <section class="container-fluid">
         <div>
-          <h1 class="mt-4">Recetas</h1>
-          <div class="row mt-4 mb-4">
+          <h1 class="mt-4 wow animate__animated animate__fadeInLeft">Recetas</h1>
+          <div class="row mt-4 mb-4 p-0 wow animate__animated animate__fadeInUpBig">
             <div class="col-12 section__recetas--selectores overflow-auto">
               <a class="btn btn-secondary">todas</a>
               <a class="btn btn-secondary">bajas calorias</a>
@@ -84,7 +87,7 @@
               <a class="btn btn-secondary">alta en proteinas</a>
             </div>
           </div>
-          <div class="container">
+          <div class="container wow animate__animated animate__fadeInUpBig">
             <div class="card mb-3 section__receta">
               <div class="row g-0">
                 <div class="col-3 section__receta--img--1">
@@ -259,7 +262,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init()
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
