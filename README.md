@@ -4,8 +4,13 @@ Proyecto final con el fin de poner en práctica los lenguajes aprendidos en el c
 
 El sitio es sobre el servicio de un nutricionista ficticio en el que se pueden ver casos de ejemplos, planes e información adicional.
 
-Se puso en práctica:
+### Se puso en práctica:
+
 HTML
 CSS
 SCSS
 Bootstrap
+
+### Link
+
+https://gerabarboni.github.io/CoderHouse-DW-PF-Nutricionista/
